@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adamu Yakubu | Portfolio - Aspiring Data Professional & Electrical Engineer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional portfolio of Adamu Yakubu - Aspiring Data Professional with an engineering foundation in Electrical Technology and Solar System Installation.">
+  <meta name="keywords" content="Adamu Yakubu, Data Science, Data Analytics, Data Engineering, AI, Electrical Engineering, Solar Energy, Kaduna Polytechnic, UNICEF, Portfolio">
+  <meta name="author" content="Adamu Yakubu">
+  <meta property="og:title" content="Adamu Yakubu | Portfolio">
+  <meta property="og:description" content="Showcasing technical skills, electrical engineering foundation, data analytics aspirations, and practical applications.">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              950: '#082f49',
+            },
+            navy: {
+              800: '#1e293b',
+              850: '#172033',
+              900: '#0f172a',
+              950: '#0b1120',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-navy-950 text-slate-100 min-h-screen relative selection:bg-sky-500 selection:text-slate-950 bg-grid-pattern">
+
+  <!-- Subtle Radial Ambient Lighting Backgrounds -->
+  <div class="fixed top-0 left-1/4 w-[600px] h-[600px] radial-glow-blue pointer-events-none -z-10 blur-3xl opacity-40"></div>
+  <div class="fixed top-1/2 right-10 w-[500px] h-[500px] radial-glow-cyan pointer-events-none -z-10 blur-3xl opacity-30"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo / Monogram Brand -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-sky-500 to-blue-600 flex items-center justify-center font-extrabold text-slate-950 shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform font-mono">
+          AY
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-lg tracking-tight text-white group-hover:text-sky-400 transition-colors">Adamu Yakubu</span>
+            <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-indicator" title="Open to Opportunities"></span>
+          </div>
+          <span class="text-xs text-sky-400/80 font-mono hidden sm:inline-block">Electrical & Solar Tech &bull; Data & AI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center space-x-1">
+        <a href="#home" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Home</a>
+        <a href="#about" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">About Me</a>
+        <a href="#aspirations" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Aspirations</a>
+        <a href="#experience" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Experience</a>
+        <a href="#projects" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Projects</a>
+        <a href="#cv-resume" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">CV / Resume</a>
+        <a href="#connect" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Connect</a>
+        <a href="#contact" class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <!-- Desktop Action CTA Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <!-- Quick Customizer Button -->
+        <button onclick="AppState.openModal('customizer-modal')" class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700/80 transition-all text-xs flex items-center gap-1.5" title="Customize Content & Picture">
+          <i data-lucide="sliders" class="w-4 h-4 text-sky-400"></i>
+          <span class="hidden md:inline font-mono">Customizer</span>
+        </button>
+
+        <!-- Download CV Button -->
+        <a id="nav-cv-btn" href="assets/docs/Adamu_Yakubu_CV.pdf" download="Adamu_Yakubu_CV.pdf" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-md shadow-sky-500/20 transition-all transform hover:-translate-y-0.5">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span>Download CV</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl bg-slate-800 text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Slide-Down Drawer Menu -->
+    <div id="mobile-menu-drawer" class="lg:hidden hidden bg-slate-900/95 border-b border-slate-800 px-6 py-6 space-y-3 backdrop-blur-xl">
+      <a href="#home" class="block text-base font-semibold text-slate-200 hover:text-sky-400 py-2">Home</a>
+      <a href="#about" class="block text-base font-semibold text-slate-200 hover:text-sky-400 py-2">About Myself</a>
+      <a href="#aspirations" class="block text-base font-semibold text-slate-200 hover:text-sky-400 py-2">Future & Career Goals</a>
+      <a href="#experience" class="block text-base font-semibold text-slate-200 hover:text-sky-400 py-2">Experience Timeline</a>
+      <a href="#projects" class="block text-base font-semibold text-slate-200 hover:text-sky-400 py-2">Projects & DSFP 6.0</a>
+      <a href="#cv-resume" class="block text-base font-semibold text-slate-200 hover:text-sky-400 py-2">CV / Resume</a>
+      <a href="#connect" class="block text-base font-semibold text-slate-200 hover:text-sky-400 py-2">Connect With Me</a>
+      <a href="#contact" class="block text-base font-semibold text-slate-200 hover:text-sky-400 py-2">Contact Section</a>
+      <div class="pt-4 border-t border-slate-800 flex flex-col gap-2">
+        <button onclick="AppState.openModal('customizer-modal')" class="w-full py-2.5 rounded-xl bg-slate-800 text-sky-400 font-semibold text-sm flex items-center justify-center gap-2 border border-slate-700">
+          <i data-lucide="sliders" class="w-4 h-4"></i>
+          <span>Customize / Edit Content</span>
+        </button>
+        <a href="assets/docs/Adamu_Yakubu_CV.pdf" download="Adamu_Yakubu_CV.pdf" class="w-full py-2.5 rounded-xl bg-sky-500 text-slate-950 font-bold text-sm flex items-center justify-center gap-2">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span>Download My CV</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO / HOME SECTION -->
+  <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Hero Introduction Column (7 cols) -->
+        <div class="lg:col-span-7 flex flex-col items-start space-y-6">
+          
+          <!-- Availability Badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-sky-500/30 text-xs text-sky-300 font-mono backdrop-blur-md shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-sky-400 pulse-indicator"></span>
+            <span id="hero-status-badge">Open to Opportunities | NYSC 2026</span>
+          </div>
+
+          <!-- Headline & Title -->
+          <div class="space-y-3">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+              Hello, I'm <br class="hidden sm:inline">
+              <span id="hero-name" class="gradient-text">Adamu Yakubu</span>
+            </h1>
+            <h2 id="hero-title" class="text-xl sm:text-2xl font-semibold text-sky-400">
+              Aspiring Data Professional & Electrical Engineering Specialist
+            </h2>
+          </div>
+
+          <!-- Professional Introduction Paragraph -->
+          <p id="hero-intro" class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+            Hello, I'm Adamu Yakubu, an aspiring data professional with a background in Electrical Technology and Solar System Installation. I am passionate about technology, data, innovation, and developing solutions to real-world problems.
+          </p>
+
+          <!-- Core Call-To-Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <!-- Explore Portfolio Button -->
+            <a href="#projects" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-slate-950 font-bold text-base shadow-lg shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">
+              <span>Explore My Portfolio</span>
+              <i data-lucide="arrow-down" class="w-5 h-5"></i>
+            </a>
+
+            <!-- Download CV Button -->
+            <a id="hero-cv-download" href="assets/docs/Adamu_Yakubu_CV.pdf" download="Adamu_Yakubu_CV.pdf" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-white font-semibold text-base border border-slate-700 hover:border-sky-500/50 transition-all transform hover:-translate-y-0.5">
+              <i data-lucide="download" class="w-5 h-5 text-sky-400"></i>
+              <span>Download My CV</span>
+            </a>
+          </div>
+
+          <!-- Key Links Strip (GitHub, LinkedIn, Live App) -->
+          <div class="pt-4 flex flex-wrap items-center gap-3 text-sm text-slate-400 font-mono">
+            <span class="text-slate-500">Quick Links:</span>
+            
+            <a id="hero-github-link" href="https://github.com/AdamuData2026/DSFP-6.0" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-sky-500 hover:text-sky-300 transition-colors">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>GitHub</span>
+            </a>
+
+            <a id="hero-linkedin-link" href="https://www.linkedin.com/in/adamu-yakubu-89899529a" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-sky-500 hover:text-sky-300 transition-colors">
+              <i data-lucide="linkedin" class="w-4 h-4 text-sky-400"></i>
+              <span>LinkedIn</span>
+            </a>
+
+            <a id="hero-live-link" href="https://adamudata2026.github.io/DSFP-6.0/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-sky-500 hover:text-sky-300 transition-colors">
+              <i data-lucide="globe" class="w-4 h-4 text-emerald-400"></i>
+              <span>Live Application</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Portrait Image Column (5 cols) -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-end relative">
+          
+          <div class="relative w-72 sm:w-80 md:w-96 group">
+            
+            <!-- Glowing ambient backplate -->
+            <div class="absolute -inset-1.5 bg-gradient-to-tr from-sky-500 to-blue-600 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition duration-500"></div>
+            
+            <!-- Image Frame Container -->
+            <div class="relative rounded-3xl overflow-hidden border-2 border-sky-400/40 bg-slate-900 shadow-2xl">
+              <img id="hero-avatar" src="assets/images/profile.jpg" alt="Adamu Yakubu - Profile Picture" class="w-full h-auto object-cover object-top aspect-[4/5] transform transition duration-500 group-hover:scale-105">
+              
+              <!-- Subtle dark gradient overlay at bottom of photo -->
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+              
+              <!-- Bottom caption overlay inside image frame -->
+              <div class="absolute bottom-4 left-4 right-4 p-3 rounded-2xl bg-slate-900/85 backdrop-blur-md border border-slate-700/60 flex items-center justify-between">
+                <div>
+                  <div class="text-xs font-bold text-white font-mono">ADAMU YAKUBU</div>
+                  <div class="text-[11px] text-sky-400">Electrical &bull; Solar &bull; Data</div>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-sky-500/20 border border-sky-500/40 flex items-center justify-center text-sky-400">
+                  <i data-lucide="check-circle" class="w-4 h-4"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Tech Badges -->
+            <div class="absolute -top-4 -left-6 hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-slate-900/90 border border-sky-500/30 backdrop-blur-md shadow-xl animate-float">
+              <div class="w-7 h-7 rounded-lg bg-sky-500/20 flex items-center justify-center text-sky-400">
+                <i data-lucide="zap" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <div class="font-bold text-white">Solar & Power</div>
+                <div class="text-[10px] text-slate-400">Engineering Fieldwork</div>
+              </div>
+            </div>
+
+            <div class="absolute -bottom-4 -right-4 hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-2xl bg-slate-900/90 border border-blue-500/30 backdrop-blur-md shadow-xl animate-float" style="animation-delay: -3s;">
+              <div class="w-7 h-7 rounded-lg bg-blue-500/20 flex items-center justify-center text-sky-400">
+                <i data-lucide="database" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <div class="font-bold text-white">Data & AI Focus</div>
+                <div class="text-[10px] text-slate-400">DSFP 6.0 & Analytics</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY STATS & CREDENTIALS STRIP -->
+  <section class="border-y border-slate-800/80 bg-slate-900/50 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 flex-shrink-0">
+            <i data-lucide="briefcase" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white font-heading">4+ Years</div>
+            <div class="text-xs text-slate-400 uppercase font-mono mt-0.5">Electrical & Solar Practice</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-sky-400 flex-shrink-0">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white font-heading">HND & ND</div>
+            <div class="text-xs text-slate-400 uppercase font-mono mt-0.5">Kaduna Polytechnic</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0">
+            <i data-lucide="award" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white font-heading">UNICEF</div>
+            <div class="text-xs text-slate-400 uppercase font-mono mt-0.5">Data Collection Trainee</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 flex-shrink-0">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white font-heading">DSFP 6.0</div>
+            <div class="text-xs text-slate-400 uppercase font-mono mt-0.5">Data Fellowship Project</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. ABOUT MYSELF SECTION -->
+  <section id="about" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+        <div>
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+            Background & Profile
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">
+            About Myself
+          </h2>
+          <p class="text-base text-slate-400 max-w-xl mt-2">
+            Bridging rigorous electrical engineering fundamentals with modern analytical data technologies.
+          </p>
+        </div>
+
+        <!-- Edit About Button -->
+        <button onclick="AppState.openEditBioModal()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold transition-all">
+          <i data-lucide="edit-3" class="w-4 h-4 text-sky-400"></i>
+          <span>Edit About Section</span>
+        </button>
+      </div>
+
+      <!-- Main About Grid Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Image & Personal Snapshot Card (4 cols) -->
+        <div class="lg:col-span-4 space-y-6">
+          <div class="glass-card p-6 rounded-3xl relative overflow-hidden text-center">
+            
+            <div class="relative w-36 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-sky-400/50 mb-4 shadow-xl shadow-sky-500/10">
+              <img id="about-avatar" src="assets/images/profile.jpg" alt="Adamu Yakubu" class="w-full h-full object-cover object-top">
+            </div>
+
+            <h3 class="text-xl font-bold text-white">Adamu Yakubu</h3>
+            <p class="text-xs text-sky-400 font-mono mt-0.5">Electrical & Electronics Engineer</p>
+
+            <div class="mt-6 pt-6 border-t border-slate-800 text-left space-y-3 text-xs">
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">State of Origin:</span>
+                <span class="font-semibold text-slate-200">Nasarawa (Lafia LGA)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Current Residence:</span>
+                <span class="font-semibold text-slate-200">Kaduna / Kano, Nigeria</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">NYSC Corps Year:</span>
+                <span class="font-semibold text-sky-400 font-mono">2025 - 2026</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-slate-400">Core Specialty:</span>
+                <span class="font-semibold text-slate-200">Power, Solar & Data</span>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4">
+              <button onclick="AppState.openModal('picture-manager-modal')" class="w-full py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-sky-300 text-xs font-semibold border border-slate-700 flex items-center justify-center gap-1.5">
+                <i data-lucide="camera" class="w-3.5 h-3.5"></i>
+                <span>Update Photo</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Quick Competencies Box -->
+          <div class="glass-card p-6 rounded-3xl space-y-4">
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider font-mono flex items-center gap-2">
+              <i data-lucide="check-square" class="w-4 h-4 text-sky-400"></i>
+              <span>Professional Strengths</span>
+            </h4>
+            <div class="space-y-2.5 text-xs text-slate-300">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-sky-400 mt-0.5 flex-shrink-0"></i>
+                <span>Strong communication, teamwork, and collaborative integrity.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-sky-400 mt-0.5 flex-shrink-0"></i>
+                <span>High personal responsibility, honesty, and dependability.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-sky-400 mt-0.5 flex-shrink-0"></i>
+                <span>Proficiency with Microsoft Word, Microsoft Excel, and PowerPoint.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-sky-400 mt-0.5 flex-shrink-0"></i>
+                <span>Hands-on electrical diagnostics and solar component sizing.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Detailed Narrative & Educational Timeline (8 cols) -->
+        <div class="lg:col-span-8 space-y-8">
+          
+          <!-- Narrative Statements -->
+          <div class="glass-card p-8 rounded-3xl space-y-6">
+            <div>
+              <h3 class="text-xs font-mono font-bold text-sky-400 uppercase tracking-wider mb-2">Personal Statement</h3>
+              <p id="about-statement" class="text-base sm:text-lg text-slate-200 leading-relaxed font-normal">
+                I am a tenacious individual with strong research, analytical, and technical problem-solving capabilities. With a solid foundation in Electrical and Electronics Engineering, I have expanded my focus into Data Science, Data Analytics, and AI. My goal is to apply data-driven methodologies and modern engineering practices to build impactful, scalable solutions for society.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800">
+              <h3 class="text-xs font-mono font-bold text-sky-400 uppercase tracking-wider mb-2">Technical Roots & Expansion</h3>
+              <p id="about-background" class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                Born in Nasarawa State and residing in Kaduna, Nigeria, I have developed a multidisciplinary background bridging hands-on hardware systems and modern data computation. I completed both my National Diploma (2021) and Higher National Diploma (2024) in Electrical and Electronics Engineering at Kaduna Polytechnic.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4 Core Pillars of Focus -->
+          <div id="about-passions-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Dynamic Injection via JavaScript -->
+          </div>
+
+          <!-- Academic & Educational Pathway -->
+          <div class="glass-card p-8 rounded-3xl">
+            <div class="flex items-center justify-between mb-6">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-sky-400">
+                  <i data-lucide="book-open" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white">Educational Qualifications</h3>
+                  <p class="text-xs text-slate-400 font-mono">Academic institutions and recognized qualifications</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="about-education-list" class="space-y-2">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3. FUTURE & CAREER GOALS SECTION -->
+  <section id="aspirations" class="py-24 bg-slate-900/40 border-t border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+          Vision & Trajectory
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white">
+          My Future and Career Aspirations
+        </h2>
+        <p id="aspirations-statement" class="text-base sm:text-lg text-slate-300 leading-relaxed">
+          My ambition is to grow into a competent, highly dependable data professional. I am dedicated to using data science, analytics, and software engineering to support informed decision-making, optimize vital energy infrastructure, improve healthcare service delivery, and solve practical challenges across Africa and globally.
+        </p>
+      </div>
+
+      <!-- 6 Career Pillars Grid -->
+      <div id="aspirations-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Dynamically Populated by AppState -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. EXPERIENCE SECTION -->
+  <section id="experience" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+            Professional Timeline
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">
+            My Experience
+          </h2>
+          <p class="text-base text-slate-400 max-w-xl mt-2">
+            Practical technical milestones spanning solar installation, electrical maintenance, and data training.
+          </p>
+        </div>
+
+        <!-- Filter Pills & Add Button -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button data-filter="all" class="exp-filter-btn px-3.5 py-1.5 rounded-xl bg-sky-500 text-slate-950 font-bold text-xs transition-all">
+            All Milestones
+          </button>
+          <button data-filter="data" class="exp-filter-btn px-3.5 py-1.5 rounded-xl bg-slate-800 text-slate-300 hover:text-white text-xs transition-all">
+            Data & Tech
+          </button>
+          <button data-filter="electrical" class="exp-filter-btn px-3.5 py-1.5 rounded-xl bg-slate-800 text-slate-300 hover:text-white text-xs transition-all">
+            Electrical & Solar
+          </button>
+
+          <button onclick="AppState.openAddExperienceModal()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-blue-600/20 hover:bg-blue-600/30 text-sky-300 border border-sky-500/30 text-xs font-semibold ml-2">
+            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+            <span>Add Experience</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Experience Timeline Container -->
+      <div class="relative timeline-stem md:timeline-stem-center">
+        <div id="experiences-timeline">
+          <!-- Dynamically Populated by AppState -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. MY PROFILE PICTURE SECTION & SHOWCASE -->
+  <section id="profile-picture" class="py-20 bg-slate-900/60 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="glass-card p-8 sm:p-10 rounded-3xl">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <div class="md:col-span-4 flex justify-center">
+            <div class="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-sky-400 shadow-2xl shadow-sky-500/20 group">
+              <img id="manager-profile-preview" src="assets/images/profile.jpg" alt="Adamu Yakubu" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+            </div>
+          </div>
+
+          <div class="md:col-span-8 space-y-4">
+            <span class="text-xs font-mono font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+              Personal Profile Photograph
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white">
+              Professional Portrait Display
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              This photograph is displayed across the portfolio homepage and About Me section. You can replace it at any time by uploading a new picture. The updated picture will be updated seamlessly in your browser.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <label for="profile-upload-input" class="cursor-pointer inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-sm shadow-md transition-all">
+                <i data-lucide="upload" class="w-4 h-4"></i>
+                <span>Upload New Picture</span>
+                <input id="profile-upload-input" type="file" accept="image/*" class="hidden">
+              </label>
+
+              <button onclick="localStorage.removeItem('adamu_custom_avatar'); AppState.data.profile.imagePath = 'assets/images/profile.jpg'; AppState.renderAll(); AppState.showToast('Reset to original profile picture', 'info');" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-sm font-semibold border border-slate-700">
+                Reset to Original
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. MY CV / RESUME SECTION -->
+  <section id="cv-resume" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+            Curriculum Vitae
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">
+            My CV & Qualifications
+          </h2>
+          <p class="text-base text-slate-400 max-w-xl mt-2">
+            Verified qualifications, official credentials, professional references, and downloadable resume.
+          </p>
+        </div>
+
+        <!-- Download & Upload Actions -->
+        <div class="flex flex-wrap items-center gap-3">
+          <button onclick="AppState.openCVPreview()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-sm font-semibold transition-all">
+            <i data-lucide="eye" class="w-4 h-4 text-sky-400"></i>
+            <span>Preview CV</span>
+          </button>
+
+          <a id="cv-download-btn" href="assets/docs/Adamu_Yakubu_CV.pdf" download="Adamu_Yakubu_CV.pdf" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-md shadow-sky-500/20 transition-all">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>Download My CV (PDF)</span>
+          </a>
+
+          <label for="cv-upload-input" class="cursor-pointer inline-flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-300 text-xs border border-slate-700" title="Upload an updated CV PDF">
+            <i data-lucide="file-up" class="w-4 h-4 text-sky-400"></i>
+            <span>Replace PDF</span>
+            <input id="cv-upload-input" type="file" accept="application/pdf" class="hidden">
+          </label>
+        </div>
+      </div>
+
+      <!-- CV Overview Content Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Verified Academic Credentials Breakdown (7 cols) -->
+        <div class="lg:col-span-7 glass-card p-8 rounded-3xl space-y-6">
+          <h3 class="text-xl font-bold text-white flex items-center gap-2">
+            <i data-lucide="award" class="w-5 h-5 text-sky-400"></i>
+            <span>Verified Educational Credentials</span>
+          </h3>
+
+          <div class="space-y-4">
+            
+            <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 flex justify-between items-start">
+              <div>
+                <h4 class="text-base font-bold text-white">Higher National Diploma (HND)</h4>
+                <p class="text-xs text-sky-400">Electrical and Electronics Engineering</p>
+                <p class="text-xs text-slate-400 mt-1">Kaduna Polytechnic, Kaduna State</p>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">2024</span>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 flex justify-between items-start">
+              <div>
+                <h4 class="text-base font-bold text-white">National Diploma (ND)</h4>
+                <p class="text-xs text-sky-400">Electrical and Electronics Engineering</p>
+                <p class="text-xs text-slate-400 mt-1">Kaduna Polytechnic, Kaduna State</p>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">2021</span>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 flex justify-between items-start">
+              <div>
+                <h4 class="text-base font-bold text-white">National Youth Service Corps (NYSC)</h4>
+                <p class="text-xs text-sky-400">Engineering Maintenance Division</p>
+                <p class="text-xs text-slate-400 mt-1">Ministry of Works and Infrastructures Kano State</p>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">2025 - 2026</span>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 flex justify-between items-start">
+              <div>
+                <h4 class="text-base font-bold text-white">West African Examination Council (WAEC)</h4>
+                <p class="text-xs text-sky-400">Senior Secondary Certificate Examination</p>
+                <p class="text-xs text-slate-400 mt-1">Iqrah Academic International Rigasa, Kaduna</p>
+              </div>
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-slate-800 text-slate-400">2015</span>
+            </div>
+
+          </div>
+
+          <div class="pt-4 border-t border-slate-800 flex items-center justify-between">
+            <span class="text-xs text-slate-400 font-mono">Document format: Official PDF</span>
+            <button onclick="AppState.openCVPreview()" class="text-xs text-sky-400 hover:underline flex items-center gap-1">
+              <span>View full 2-page document preview</span>
+              <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Professional References & Competencies (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <div class="glass-card p-6 rounded-3xl">
+            <h3 class="text-base font-bold text-white flex items-center gap-2 mb-4">
+              <i data-lucide="users" class="w-4 h-4 text-sky-400"></i>
+              <span>Professional & Academic References</span>
+            </h3>
+            <p class="text-xs text-slate-400 mb-4">Official referees as presented in my verified curriculum vitae:</p>
+            <div id="cv-references-grid" class="space-y-3">
+              <!-- Dynamically Populated -->
+            </div>
+          </div>
+
+          <!-- Quick Skills & Tooling Badge Box -->
+          <div class="glass-card p-6 rounded-3xl">
+            <h3 class="text-base font-bold text-white flex items-center gap-2 mb-3">
+              <i data-lucide="check-circle" class="w-4 h-4 text-sky-400"></i>
+              <span>Software & Office Productivity</span>
+            </h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-sky-300 border border-slate-700">Microsoft Excel</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-sky-300 border border-slate-700">Microsoft Word</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-sky-300 border border-slate-700">PowerPoint</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-sky-300 border border-slate-700">Primary Field Data Tools</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-sky-300 border border-slate-700">Electrical Diagnostics</span>
+              <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-sky-300 border border-slate-700">Solar PV Sizing</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. PROJECTS & GITHUB SECTION -->
+  <section id="projects" class="py-24 bg-slate-900/40 border-t border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs font-mono font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+            Portfolio Showcase
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">
+            Projects & Practical Applications
+          </h2>
+          <p class="text-base text-slate-400 max-w-xl mt-2">
+            Demonstrating software development, user interface design, and data-driven solutions.
+          </p>
+        </div>
+
+        <!-- Add Project Button -->
+        <button onclick="AppState.openAddProjectModal()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold transition-all">
+          <i data-lucide="plus-circle" class="w-4 h-4 text-sky-400"></i>
+          <span>Add Future Project</span>
+        </button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Dynamically Populated by AppState with DSFP 6.0 and Future placeholders -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. CONNECT WITH ME (SOCIAL MEDIA LINKS) -->
+  <section id="connect" class="py-24 relative border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+          Network & Community
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+          Connect With Me
+        </h2>
+        <p class="text-base text-slate-400">
+          Follow my work, inspect my open-source code repositories, or connect professionally.
+        </p>
+      </div>
+
+      <!-- Social Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- GitHub Repository Card -->
+        <a href="https://github.com/AdamuData2026/DSFP-6.0" target="_blank" rel="noopener noreferrer" class="glass-card p-6 rounded-2xl flex flex-col justify-between group hover:border-sky-400 transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+              <i data-lucide="github" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">GitHub Repository</h3>
+            <p class="text-xs text-slate-400 mt-1">Inspect project source code, commits, and implementation.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-sky-400">
+            <span>github.com/AdamuData2026</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </div>
+        </a>
+
+        <!-- LinkedIn Profile Card -->
+        <a href="https://www.linkedin.com/in/adamu-yakubu-89899529a" target="_blank" rel="noopener noreferrer" class="glass-card p-6 rounded-2xl flex flex-col justify-between group hover:border-sky-400 transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-600/20 flex items-center justify-center text-sky-400 mb-4 group-hover:scale-110 transition-transform">
+              <i data-lucide="linkedin" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">LinkedIn Profile</h3>
+            <p class="text-xs text-slate-400 mt-1">Connect professionally and view career progression.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-sky-400">
+            <span>linkedin.com/in/adamu-yakubu</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </div>
+        </a>
+
+        <!-- Live Project Card -->
+        <a href="https://adamudata2026.github.io/DSFP-6.0/" target="_blank" rel="noopener noreferrer" class="glass-card p-6 rounded-2xl flex flex-col justify-between group hover:border-emerald-400 transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400 mb-4 group-hover:scale-110 transition-transform">
+              <i data-lucide="globe" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">Live Application</h3>
+            <p class="text-xs text-slate-400 mt-1">Interact with DSFP 6.0 Job Tracking & Application Portal.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-emerald-400">
+            <span>Launch Web App</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </div>
+        </a>
+
+        <!-- Direct Email Card -->
+        <a href="mailto:yakub19695@gmail.com" class="glass-card p-6 rounded-2xl flex flex-col justify-between group hover:border-sky-400 transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center justify-center text-sky-400 mb-4 group-hover:scale-110 transition-transform">
+              <i data-lucide="mail" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Direct Email</h3>
+            <p class="text-xs text-slate-400 mt-1">Send a direct inquiry or collaboration proposal.</p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-sky-400">
+            <span>yakub19695@gmail.com</span>
+            <i data-lucide="send" class="w-4 h-4"></i>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. CONTACT SECTION -->
+  <section id="contact" class="py-24 bg-slate-900/60 border-t border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-mono font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+          Get In Touch
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+          Contact Me
+        </h2>
+        <p class="text-base text-slate-400">
+          Have an inquiry, project, or opportunity? Fill out the verified form below or reach me directly.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left: Contact Details Cards (5 cols) -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 flex-shrink-0">
+              <i data-lucide="mail" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs font-mono uppercase text-slate-400">Email Address</span>
+              <h4 class="text-base font-bold text-white mt-0.5">
+                <a id="contact-email" href="mailto:yakub19695@gmail.com" class="hover:text-sky-400 transition-colors">yakub19695@gmail.com</a>
+              </h4>
+              <p class="text-xs text-slate-400 mt-1">Available for data, tech, and engineering communications.</p>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-sky-400 flex-shrink-0">
+              <i data-lucide="phone" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs font-mono uppercase text-slate-400">Phone & WhatsApp</span>
+              <h4 class="text-base font-bold text-white mt-0.5">
+                <a id="contact-phone" href="tel:+2347037430304" class="hover:text-sky-400 transition-colors font-mono">+234 703 743 0304</a>
+              </h4>
+              <p class="text-xs text-slate-400 mt-1">Call or message via WhatsApp.</p>
+            </div>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0">
+              <i data-lucide="map-pin" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-xs font-mono uppercase text-slate-400">Location</span>
+              <h4 id="contact-location" class="text-base font-bold text-white mt-0.5">
+                Kaduna / Nasarawa, Nigeria
+              </h4>
+              <p class="text-xs text-slate-400 mt-1">No 3, Polewire Road, behind NTI Quarters, Rigachikun, Kaduna.</p>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-sky-950/40 to-blue-950/30 border border-sky-500/20">
+            <div class="flex items-center gap-3 mb-2">
+              <i data-lucide="clock" class="w-5 h-5 text-sky-400"></i>
+              <span class="text-sm font-bold text-white">Current Availability</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Currently undertaking National Youth Service Corps (NYSC) with active availability for remote data analytics tasks, research collaborations, and engineering consulting.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Right: Functional Contact Form (7 cols) -->
+        <div class="lg:col-span-7">
+          <div class="glass-card p-8 sm:p-10 rounded-3xl relative">
+            
+            <form id="contact-form" class="space-y-6">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Full Name -->
+                <div>
+                  <label for="name" class="block text-xs font-mono font-medium text-slate-300 mb-2">
+                    Full Name <span class="text-rose-400">*</span>
+                  </label>
+                  <input type="text" id="name" name="name" required placeholder="e.g. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm transition-all">
+                </div>
+
+                <!-- Email Address -->
+                <div>
+                  <label for="email" class="block text-xs font-mono font-medium text-slate-300 mb-2">
+                    Email Address <span class="text-rose-400">*</span>
+                  </label>
+                  <input type="email" id="email" name="email" required placeholder="e.g. john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm transition-all">
+                </div>
+              </div>
+
+              <!-- Subject -->
+              <div>
+                <label for="subject" class="block text-xs font-mono font-medium text-slate-300 mb-2">
+                  Subject <span class="text-rose-400">*</span>
+                </label>
+                <input type="text" id="subject" name="subject" required placeholder="e.g. Data Analytics Collaboration or Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm transition-all">
+              </div>
+
+              <!-- Message Body -->
+              <div>
+                <label for="message" class="block text-xs font-mono font-medium text-slate-300 mb-2">
+                  Message <span class="text-rose-400">*</span>
+                </label>
+                <textarea id="message" name="message" rows="5" required placeholder="Please write your detailed message here..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 focus:ring-1 focus:ring-sky-400 text-sm transition-all resize-none"></textarea>
+              </div>
+
+              <!-- Form Submission Button -->
+              <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+                <button type="submit" id="contact-submit-btn" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-slate-950 font-bold text-sm shadow-lg shadow-sky-500/25 transition-all transform hover:-translate-y-0.5">
+                  <span>Send Message</span>
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                </button>
+
+                <span class="text-xs text-slate-400 text-center sm:text-right font-mono">
+                  Guaranteed direct delivery to Adamu Yakubu.
+                </span>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-16 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Left Brand & Mission (6 cols) -->
+        <div class="md:col-span-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-sky-500 flex items-center justify-center text-slate-950 font-bold font-mono">
+              AY
+            </div>
+            <span class="text-xl font-bold text-white tracking-tight">Adamu Yakubu</span>
+          </div>
+
+          <p class="text-sm text-slate-400 max-w-md leading-relaxed">
+            Dedicated to leveraging data, electrical engineering fundamentals, and emerging technologies to build resilient, human-centered solutions.
+          </p>
+
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://github.com/AdamuData2026/DSFP-6.0" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-sky-400 hover:border-sky-500 transition-colors" title="GitHub">
+              <i data-lucide="github" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/adamu-yakubu-89899529a" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-sky-400 hover:border-sky-500 transition-colors" title="LinkedIn">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            </a>
+            <a href="https://adamudata2026.github.io/DSFP-6.0/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-sky-400 hover:border-sky-500 transition-colors" title="Live Project">
+              <i data-lucide="globe" class="w-4 h-4"></i>
+            </a>
+            <a href="mailto:yakub19695@gmail.com" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-sky-400 hover:border-sky-500 transition-colors" title="Email">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Navigation Links (3 cols) -->
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-white">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="hover:text-sky-400 transition-colors">Home Landing</a></li>
+            <li><a href="#about" class="hover:text-sky-400 transition-colors">About Myself</a></li>
+            <li><a href="#aspirations" class="hover:text-sky-400 transition-colors">Future & Career Goals</a></li>
+            <li><a href="#experience" class="hover:text-sky-400 transition-colors">Experience Timeline</a></li>
+            <li><a href="#projects" class="hover:text-sky-400 transition-colors">Projects & DSFP 6.0</a></li>
+            <li><a href="#cv-resume" class="hover:text-sky-400 transition-colors">CV & Qualifications</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal & Location (3 cols) -->
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-xs font-mono font-bold uppercase tracking-wider text-white">Contact & Ref</h4>
+          <p class="text-xs text-slate-400">
+            Rigachikun, Kaduna State, Nigeria.<br>
+            Phone: +234 703 743 0304<br>
+            Email: yakub19695@gmail.com
+          </p>
+          <div class="pt-2">
+            <a href="assets/docs/Adamu_Yakubu_CV.pdf" download="Adamu_Yakubu_CV.pdf" class="inline-flex items-center gap-1.5 text-xs text-sky-400 hover:underline">
+              <i data-lucide="download" class="w-3.5 h-3.5"></i>
+              <span>Download CV (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>
+          &copy; 2026 Adamu Yakubu. All rights reserved.
+        </div>
+        <div class="flex items-center gap-6">
+          <span>Engineered with HTML5 &bull; Tailwind CSS &bull; Vanilla JS</span>
+          <a href="#home" class="hover:text-sky-400 transition-colors flex items-center gap-1">
+            <span>Back to top</span>
+            <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= MODALS & UTILITY PANELS ================= -->
+
+  <!-- CV PREVIEW MODAL -->
+  <div id="cv-preview-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 backdrop-blur-md p-4 sm:p-6">
+    <div class="relative w-full max-w-4xl h-[90vh] bg-slate-900 border border-slate-700 rounded-3xl overflow-hidden flex flex-col shadow-2xl">
+      <!-- Modal Header -->
+      <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-slate-900/90">
+        <div class="flex items-center gap-3">
+          <i data-lucide="file-text" class="w-5 h-5 text-sky-400"></i>
+          <h3 class="text-base font-bold text-white">Curriculum Vitae Preview - Adamu Yakubu</h3>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="assets/docs/Adamu_Yakubu_CV.pdf" download="Adamu_Yakubu_CV.pdf" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-500 text-slate-950 font-bold text-xs">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i>
+            <span>Download PDF</span>
+          </a>
+          <button onclick="AppState.closeModal('cv-preview-modal')" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body (PDF Viewer) -->
+      <div class="flex-1 bg-slate-950 p-2 overflow-hidden flex flex-col">
+        <iframe id="cv-iframe-viewer" src="assets/docs/Adamu_Yakubu_CV.pdf" class="w-full flex-1 rounded-xl border border-slate-800" title="CV Document Preview">
+          <p class="p-6 text-slate-300">Your browser does not support inline PDF viewing. <a href="assets/docs/Adamu_Yakubu_CV.pdf" download class="text-sky-400 underline">Click here to download the PDF</a>.</p>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDIT BIO MODAL -->
+  <div id="edit-bio-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 backdrop-blur-md p-4">
+    <div class="relative w-full max-w-2xl bg-slate-900 border border-slate-700 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+          <i data-lucide="edit-3" class="w-5 h-5 text-sky-400"></i>
+          <span>Edit About Myself</span>
+        </h3>
+        <button onclick="AppState.closeModal('edit-bio-modal')" class="p-1.5 rounded-lg text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-mono text-slate-300 mb-2">Personal Statement</label>
+          <textarea id="edit-bio-statement" rows="4" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:outline-none focus:border-sky-400"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-mono text-slate-300 mb-2">Educational & Technical Background Summary</label>
+          <textarea id="edit-bio-summary" rows="3" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm focus:outline-none focus:border-sky-400"></textarea>
+        </div>
+      </div>
+
+      <div class="flex justify-end gap-3 pt-4 border-t border-slate-800">
+        <button onclick="AppState.closeModal('edit-bio-modal')" class="px-4 py-2 rounded-xl bg-slate-800 text-slate-300 text-sm">Cancel</button>
+        <button onclick="AppState.saveEditBio()" class="px-5 py-2 rounded-xl bg-sky-500 text-slate-950 font-bold text-sm">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD EXPERIENCE MODAL -->
+  <div id="add-experience-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 backdrop-blur-md p-4">
+    <div class="relative w-full max-w-xl bg-slate-900 border border-slate-700 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+          <i data-lucide="plus" class="w-5 h-5 text-sky-400"></i>
+          <span>Add Experience Milestone</span>
+        </h3>
+        <button onclick="AppState.closeModal('add-experience-modal')" class="p-1.5 rounded-lg text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form id="add-exp-form" onsubmit="AppState.saveNewExperience(event)" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-mono text-slate-300 mb-1">Role / Job Title *</label>
+            <input type="text" name="title" required placeholder="e.g. Solar Engineer" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-mono text-slate-300 mb-1">Organization / Client *</label>
+            <input type="text" name="organization" required placeholder="e.g. Solar Tech Nigeria" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-mono text-slate-300 mb-1">Period / Date *</label>
+            <input type="text" name="period" required placeholder="e.g. 2026 - Present" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-mono text-slate-300 mb-1">Category</label>
+            <select name="category" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+              <option value="data">Data & Tech</option>
+              <option value="electrical">Electrical & Solar</option>
+              <option value="professional">Professional / Soft-skills</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-mono text-slate-300 mb-1">Badge Tag</label>
+          <input type="text" name="badge" placeholder="e.g. Solar PV Installation" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-mono text-slate-300 mb-1">Description / Summary *</label>
+          <textarea name="description" rows="3" required placeholder="Describe key responsibilities and problem-solving..." class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-mono text-slate-300 mb-1">Achievements / Highlights (1 per line)</label>
+          <textarea name="highlights" rows="2" placeholder="Key achievement 1&#10;Key achievement 2" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm font-mono"></textarea>
+        </div>
+
+        <div class="flex justify-end gap-3 pt-4 border-t border-slate-800">
+          <button type="button" onclick="AppState.closeModal('add-experience-modal')" class="px-4 py-2 rounded-xl bg-slate-800 text-slate-300 text-sm">Cancel</button>
+          <button type="submit" class="px-5 py-2 rounded-xl bg-sky-500 text-slate-950 font-bold text-sm">Add Milestone</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADD PROJECT MODAL -->
+  <div id="add-project-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 backdrop-blur-md p-4">
+    <div class="relative w-full max-w-xl bg-slate-900 border border-slate-700 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+          <i data-lucide="plus-circle" class="w-5 h-5 text-sky-400"></i>
+          <span>Add Future Project</span>
+        </h3>
+        <button onclick="AppState.closeModal('add-project-modal')" class="p-1.5 rounded-lg text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form id="add-project-form" onsubmit="AppState.saveNewProject(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-mono text-slate-300 mb-1">Project Name *</label>
+          <input type="text" name="name" required placeholder="e.g. Health Analytics Dashboard" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-mono text-slate-300 mb-1">Subtitle / Category</label>
+          <input type="text" name="title" placeholder="e.g. Public Health Data Insights" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+        </div>
+
+        <div>
+          <label class="block text-xs font-mono text-slate-300 mb-1">Description *</label>
+          <textarea name="description" rows="3" required placeholder="Describe the problem, solution, and data techniques..." class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-mono text-slate-300 mb-1">Technologies Used (comma separated)</label>
+          <input type="text" name="tags" placeholder="e.g. Python, Pandas, PowerBI, SQL" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-mono text-slate-300 mb-1">GitHub URL</label>
+            <input type="url" name="githubUrl" placeholder="https://github.com/..." class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-mono text-slate-300 mb-1">Live Application URL</label>
+            <input type="url" name="liveUrl" placeholder="https://..." class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+          </div>
+        </div>
+
+        <div class="flex justify-end gap-3 pt-4 border-t border-slate-800">
+          <button type="button" onclick="AppState.closeModal('add-project-modal')" class="px-4 py-2 rounded-xl bg-slate-800 text-slate-300 text-sm">Cancel</button>
+          <button type="submit" class="px-5 py-2 rounded-xl bg-sky-500 text-slate-950 font-bold text-sm">Save Project</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- CUSTOMIZER / DATA MANAGEMENT MODAL -->
+  <div id="customizer-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 backdrop-blur-md p-4">
+    <div class="relative w-full max-w-md bg-slate-900 border border-slate-700 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+        <h3 class="text-xl font-bold text-white flex items-center gap-2">
+          <i data-lucide="sliders" class="w-5 h-5 text-sky-400"></i>
+          <span>Portfolio Customizer</span>
+        </h3>
+        <button onclick="AppState.closeModal('customizer-modal')" class="p-1.5 rounded-lg text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="space-y-3">
+        <button onclick="AppState.closeModal('customizer-modal'); AppState.openEditBioModal();" class="w-full p-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm flex items-center gap-3">
+          <i data-lucide="user" class="w-5 h-5 text-sky-400"></i>
+          <div class="text-left">
+            <div class="font-bold">Edit Bio & Statements</div>
+            <div class="text-xs text-slate-400">Update About Me and background narrative</div>
+          </div>
+        </button>
+
+        <button onclick="AppState.closeModal('customizer-modal'); AppState.openAddExperienceModal();" class="w-full p-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm flex items-center gap-3">
+          <i data-lucide="briefcase" class="w-5 h-5 text-sky-400"></i>
+          <div class="text-left">
+            <div class="font-bold">Add Experience Entry</div>
+            <div class="text-xs text-slate-400">Add new work or learning milestones</div>
+          </div>
+        </button>
+
+        <button onclick="AppState.closeModal('customizer-modal'); AppState.openAddProjectModal();" class="w-full p-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm flex items-center gap-3">
+          <i data-lucide="folder-plus" class="w-5 h-5 text-sky-400"></i>
+          <div class="text-left">
+            <div class="font-bold">Add Future Project</div>
+            <div class="text-xs text-slate-400">Showcase your new repositories & apps</div>
+          </div>
+        </button>
+
+        <button onclick="AppState.exportData()" class="w-full p-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm flex items-center gap-3">
+          <i data-lucide="download-cloud" class="w-5 h-5 text-emerald-400"></i>
+          <div class="text-left">
+            <div class="font-bold">Export Backup (JSON)</div>
+            <div class="text-xs text-slate-400">Save offline copy of all custom changes</div>
+          </div>
+        </button>
+
+        <button onclick="AppState.resetData()" class="w-full p-3 rounded-xl bg-rose-950/40 hover:bg-rose-900/50 border border-rose-800/40 text-rose-300 text-sm flex items-center gap-3">
+          <i data-lucide="rotate-ccw" class="w-5 h-5 text-rose-400"></i>
+          <div class="text-left">
+            <div class="font-bold">Reset to Authentic Defaults</div>
+            <div class="text-xs text-rose-400/80">Clear edits and restore original credentials</div>
+          </div>
+        </button>
+      </div>
+
+      <div class="pt-4 border-t border-slate-800 flex justify-end">
+        <button onclick="AppState.closeModal('customizer-modal')" class="px-5 py-2 rounded-xl bg-sky-500 text-slate-950 font-bold text-sm">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>
